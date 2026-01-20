@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>For You ❤️</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ФОН -->
+    <div id="background" class="background"></div>
+    <div class="overlay"></div>
+
+    <!-- Музыка -->
+    <button id="music-btn" class="music-btn">🎵</button>
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <!-- Центральный текст -->
+    <div class="content-wrapper">
+        <div id="text" class="text"></div>
+    </div>
+
+    <!-- Таймер -->
+    <div class="timer-fixed">
+        <div class="timer-title">
+            Мы уже вместе <span class="heart">💗</span>
+        </div>
+        <div id="love-timer" class="timer-value"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
