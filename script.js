@@ -1,4 +1,4 @@
-/* Тексты */
+/* Фразы */
 const texts = [
     "Ты — мой самый тёплый человек",
     "Я люблю тебя больше с каждым днём",
@@ -58,10 +58,16 @@ setInterval(updateTimer, 1000);
 /* Музыка */
 const musicBtn = document.getElementById("music-btn");
 const music = document.getElementById("bg-music");
+
 let playing = false;
 
 musicBtn.addEventListener("click", () => {
-    if (!playing) music.play();
-    else music.pause();
+    if (!playing) {
+        music.play();
+        musicBtn.style.background = "rgba(255,255,255,0.30)";
+    } else {
+        music.pause();
+        musicBtn.style.background = "rgba(255,255,255,0.15)";
+    }
     playing = !playing;
 });
