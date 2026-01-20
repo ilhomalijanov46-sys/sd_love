@@ -13,14 +13,13 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* ФОН */
+/* Фон */
 .background {
     position: fixed;
     inset: 0;
-    background-image: url("background.jpg");
-    /* ← ВАЖНО */
     background-size: cover;
     background-position: center;
+    background-image: url("background.jpg");
     animation: breathing 14s ease-in-out infinite;
     z-index: 1;
 }
@@ -62,7 +61,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 24px;
-    text-align: center;
 }
 
 .text {
@@ -73,6 +71,7 @@ body {
     opacity: 0;
     transition: opacity 1.5s ease;
     max-width: 480px;
+    text-align: center;
 }
 
 /* Сердечко */
@@ -95,7 +94,7 @@ body {
     }
 }
 
-/* Таймер внизу */
+/* Таймер */
 .timer-fixed {
     position: fixed;
     bottom: calc(24px + env(safe-area-inset-bottom));
@@ -127,7 +126,12 @@ body {
     padding: 10px 14px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
     color: white;
+    backdrop-filter: blur(8px);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    background: rgba(255, 255, 255, 0.30);
 }
